@@ -1,0 +1,39 @@
+@import 'page';
+
+body {
+	font-family: Palatino;
+}
+
+p {
+	font-family: Verdana;
+	margin-bottom: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 20px;
+}
+
+span {
+	margin-left: 12px;
+}
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.bold {
+	font-weight: bold;
+}

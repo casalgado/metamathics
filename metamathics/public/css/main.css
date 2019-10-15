@@ -1,0 +1,22 @@
+.page {
+  border: 2px solid black;
+}
+
+.letter {
+  width: 100%;
+  height: 5in;
+  margin-top: 1cm;
+}
+
+body {
+  font-size: 14pt;
+}
+
+p {
+  margin-top: 15px;
+}
+
+span {
+  margin-left: 12px;
+}
+/*# sourceMappingURL=main.css.map */

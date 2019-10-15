@@ -1,0 +1,49 @@
+.page {
+  border: 1px solid black;
+}
+
+.letter {
+  width: 100%;
+  height: 5in;
+  margin-top: 1cm;
+  text-align: center;
+}
+
+body {
+  font-family: Palatino;
+}
+
+p {
+  font-family: Verdana;
+  margin-bottom: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+
+span {
+  margin-left: 12px;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
