@@ -1,5 +1,6 @@
 .page {
-	border: 1px solid black;
+	border: 1px solid gray;
+	padding: 5px;
 }
 
 .letter {
@@ -7,4 +8,14 @@
 	height: 5in;
 	margin-top: 1cm;
 	text-align: center;
+}
+
+.questionContainer {
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 200px;
+}
+
+.questionNumber {
+	margin-right: 10px;
 }
