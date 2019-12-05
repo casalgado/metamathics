@@ -5,7 +5,7 @@ function onLoad() {
 	let page = Draw.page(Page.letter());
 
 	let nameSpace = Draw.nameSpace('h6', 'Name:__________________________');
-	let title = Draw.title('h4', '7th Expressions and Equations Retake Dec 03');
+	let title = Draw.title('h4', 'Expressions and Equations Quiz Nov 7');
 
 	let section1 = Draw.section();
 	let sectionTitle = Draw.sectionTitle('p', 'Show your work');
@@ -13,20 +13,20 @@ function onLoad() {
 
 	let doc = document.getElementById('app_container');
 
-	let dist = [ '@@ 24 - 36 @@', '@@ 20y - 35 @@', '@@ (-4)(2x + 4) @@', '@@ 5(4x - 3)@@' ];
+	let dist = [ '@@ 21 - 56 @@', '@@ 2(9x - 3)@@', '@@ 22y - 88 @@', '@@ (-8)(x + 5) @@' ];
 
 	let simp = [
-		'@@ -a - 5 - 8b - 2a - b - 10 @@',
-		'@@ 8x + 11y - 9x + 2x - 9y + 6 @@',
-		'@@ -4p - 7q + 2(2p + 3q) @@',
-		'@@ 4xy + 3(2x - 4) + 8xy + 2x -3xy @@'
+		'@@ 5p + 3r + 2 - 1 + 8r - 8p @@',
+		'@@ 21x - 5 - 7x + 5y - 3x + 9y @@',
+		'@@ -5xy + 9x -8y + 6x - 6xy @@',
+		'@@ 4x^2 - 3(x-3y) + 7y + x -1x^2 @@'
 	];
 
 	let twos = [
-		'$$ \\frac{x}{-4} - 8 = 24 $$',
-		'$$ 3(x - 3) = 21 $$',
-		'$$ 24 - 3n = -12 $$',
-		'$$ \\frac{15-x}{4} = 3 $$'
+		'$$ \\frac{x}{9} + 13 = 3 $$',
+		'$$ 6(x + 4) = 18 $$',
+		'$$ 9x + 7 = 43 $$',
+		'$$ \\frac{x + 2}{7} = 5 $$'
 	];
 
 	page.appendChild(nameSpace);

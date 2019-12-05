@@ -4,5 +4,7 @@
 			"path": "test_builder"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }

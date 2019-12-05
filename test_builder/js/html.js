@@ -37,12 +37,12 @@ class HTML {
 	}
 
 	sectionSubtitle(element, inner) {
-		return this.create(element, '', 'sectionSubtitle fleft', inner);
+		return this.create(element, '', 'sectionSubtitle fleft clear', inner);
 	}
 
 	question(element, inner, accumulator) {
 		let number = this.create('p', '', 'questionNumber fleft', `${accumulator}.`);
-		let cont = this.create('div', '', 'questionContainer fleft');
+		let cont = this.create('div', `q${accumulator}`, 'questionContainer fleft');
 		let quest = this.create(element, '', 'question fleft', inner);
 		cont.appendChild(number);
 		cont.appendChild(quest);

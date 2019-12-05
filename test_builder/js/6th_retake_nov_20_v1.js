@@ -5,47 +5,55 @@ function onLoad() {
 	let page = Draw.page(Page.letter());
 
 	let nameSpace = Draw.nameSpace('h6', 'Name:__________________________');
-	let title = Draw.title('h4', '7th Expressions and Equations Retake Dec 03');
+	let title = Draw.title('h4', '6th Retake Review From Unit 1 + Simplifying Expressions.  Nov 20');
 
 	let section1 = Draw.section();
-	let sectionTitle = Draw.sectionTitle('p', 'Show your work');
-	let sectionSubtitle = Draw.sectionSubtitle('p', 'Rewrite each expression below using the distributive property');
+	let sectionTitle = Draw.sectionTitle(
+		'p',
+		'Show your work at the bottom. Please add questions numbers to your work.'
+	);
 
 	let doc = document.getElementById('app_container');
 
-	let dist = [ '@@ 24 - 36 @@', '@@ 20y - 35 @@', '@@ (-4)(2x + 4) @@', '@@ 5(4x - 3)@@' ];
-
-	let simp = [
-		'@@ -a - 5 - 8b - 2a - b - 10 @@',
-		'@@ 8x + 11y - 9x + 2x - 9y + 6 @@',
-		'@@ -4p - 7q + 2(2p + 3q) @@',
-		'@@ 4xy + 3(2x - 4) + 8xy + 2x -3xy @@'
+	let firstQuestions = [
+		'@@ (-4) + (-4) @@',
+		'@@ 6 - 12 @@',
+		'@@ (-3) + 14 @@',
+		'@@ (-1) - (-7) @@',
+		'@@ 5 + (-11) @@'
 	];
 
-	let twos = [
-		'$$ \\frac{x}{-4} - 8 = 24 $$',
-		'$$ 3(x - 3) = 21 $$',
-		'$$ 24 - 3n = -12 $$',
-		'$$ \\frac{15-x}{4} = 3 $$'
+	let secondQuestions = [
+		'$$ \\frac{16}{24} + \\frac{9}{12} $$',
+		'$$ \\frac{5}{4} - \\frac{1}{3} $$',
+		'$$ \\frac{2}{8} \\times \\frac{4}{16} $$',
+		'$$ \\frac{6}{8} \\div \\frac{1}{4} $$',
+		'$$ \\frac{1}{3} + (\\frac{1}{2} \\times \\frac{6}{2})$$'
+	];
+
+	let thirdQuestions = [
+		'@@ -a - 7b - 2a - 3b @@',
+		'@@ -5p - 7q - 8 + 2p + 5q + 5 @@',
+		'@@ 7x + 13y - 5x + 6x - 14y + 3 @@'
 	];
 
 	page.appendChild(nameSpace);
 	page.appendChild(title);
 	section1.appendChild(sectionTitle);
-	section1.appendChild(Draw.sectionSubtitle('p', 'Rewrite each expression using the distributive property:'));
-	dist.forEach((e) => {
+	section1.appendChild(Draw.sectionSubtitle('p', '0.5 points per question. Solve each integer operation:'));
+	firstQuestions.forEach((e) => {
 		let ques = Draw.question('p', e, QUESTION);
 		section1.appendChild(ques);
 		QUESTION++;
 	});
-	section1.appendChild(Draw.sectionSubtitle('p', 'Simplify each expression:'));
-	simp.forEach((e) => {
+	section1.appendChild(Draw.sectionSubtitle('p', '0.5 points pre question. Solve each fraction operation:'));
+	secondQuestions.forEach((e) => {
 		let ques = Draw.question('p', e, QUESTION);
 		section1.appendChild(ques);
 		QUESTION++;
 	});
-	section1.appendChild(Draw.sectionSubtitle('p', 'Find the solution to the equation:'));
-	twos.forEach((e) => {
+	section1.appendChild(Draw.sectionSubtitle('p', '1 point per question. Simplify each expression:'));
+	thirdQuestions.forEach((e) => {
 		let ques = Draw.question('p', e, QUESTION);
 		section1.appendChild(ques);
 		QUESTION++;
